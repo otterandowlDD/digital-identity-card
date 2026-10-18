@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Meet Ning · Khanittha Hemngern</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&family=Noto+Sans+Thai:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FAF6EC;--card:#FFFDF7;--ink:#1E2A22;--mute:#5E6A60;--green:#1F3D2E;--green-ink:#FAF6EC;--champ:#EFE3C8;--bronze:#9A6B3C;--line:#E3D7BC;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101A14;--card:#17241C;--ink:#EDE6D4;--mute:#A4AE9F;--green:#C9B27C;--green-ink:#101A14;--champ:#22332A;--bronze:#C99A66;--line:#2C3E33}}
+:root[data-theme="dark"]{--bg:#101A14;--card:#17241C;--ink:#EDE6D4;--mute:#A4AE9F;--green:#C9B27C;--green-ink:#101A14;--champ:#22332A;--bronze:#C99A66;--line:#2C3E33}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:300 16px/1.7 Inter,"Noto Sans Thai",system-ui,sans-serif}
+:lang(th){line-height:1.85}
+h1,h2,h3{font-family:"Cormorant Garamond","Noto Sans Thai",Georgia,serif;font-weight:500;margin:0;line-height:1.15}
+a{color:inherit}
+.wrap{max-width:880px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:52px;gap:10px}
+.brand{font-family:"Cormorant Garamond",serif;font-size:20px;letter-spacing:.04em}
+.navl{display:flex;gap:16px;font-size:13px;overflow-x:auto;scrollbar-width:none}
+.navl a{text-decoration:none;color:var(--mute);white-space:nowrap}
+.lang{display:flex;border:1px solid var(--bronze);border-radius:99px;overflow:hidden;flex:none}
+.lang button{border:0;background:none;color:var(--bronze);padding:5px 11px;font:500 12px Inter,sans-serif;cursor:pointer}
+.lang button.on{background:var(--bronze);color:var(--bg)}
+section{padding:68px 0 8px}
+.eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--bronze);margin-bottom:14px;font-weight:500}
+:lang(th) .eyebrow{letter-spacing:.06em}
+.hero{padding-top:64px}
+.hero h1{font-size:clamp(44px,11vw,84px)}
+.hero .id{margin:18px 0 22px;color:var(--bronze);font-size:14px;letter-spacing:.08em}
+.hero p{max-width:560px;color:var(--mute);font-size:17px}
+.rule{width:48px;height:1px;background:var(--bronze);margin:26px 0}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:99px;border:1px solid var(--green);background:var(--green);color:var(--green-ink);font:500 14px Inter,"Noto Sans Thai",sans-serif;text-decoration:none;cursor:pointer}
+.btn.ghost{background:none;color:var(--green)}
+h2{font-size:clamp(30px,6vw,44px);margin-bottom:12px}
+.lead{color:var(--mute);max-width:600px}
+.bg2{background:var(--champ);margin-top:60px;padding-bottom:64px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:26px}
+@media(max-width:560px){.grid{grid-template-columns:1fr}}
+.bc{text-align:left;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:20px;cursor:pointer;color:var(--ink);font:inherit;transition:.2s}
+.bc:hover{border-color:var(--bronze)}
+.bc[aria-selected="true"]{border-color:var(--green);box-shadow:inset 0 -3px 0 var(--bronze)}
+.bc .n{font-family:"Cormorant Garamond",serif;color:var(--bronze);font-size:15px}
+.bc h3{font-size:23px;margin:4px 0 6px}
+.bc span.t{font-size:13px;color:var(--mute);display:block;line-height:1.5}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:28px 24px;margin-top:14px}
+.panel h3{font-size:34px;margin-bottom:6px}
+.panel .sub{color:var(--bronze);font-size:14px;margin-bottom:16px}
+.panel ul{padding:0;margin:14px 0 0;list-style:none}
+.panel li{padding:9px 0;border-top:1px solid var(--line);font-size:15px}
+.note{margin-top:18px;padding:12px 14px;border-left:2px solid var(--bronze);background:var(--champ);font-size:14px;border-radius:0 4px 4px 0}
+.lbl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin:22px 0 6px}
+:lang(th) .lbl{letter-spacing:.03em}
+.qs{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+.q{text-align:left;border:1px solid var(--line);background:none;border-radius:6px;padding:12px 14px;font:inherit;font-size:15px;color:var(--ink);cursor:pointer}
+.q[aria-expanded="true"]{border-color:var(--green)}
+.a{display:none;padding:2px 14px 12px;color:var(--mute);font-size:15px}
+.q[aria-expanded="true"]+.a{display:block}
+.facts{display:grid;gap:10px;margin-top:22px}
+.fact{padding:14px 0;border-top:1px solid var(--line)}
+.fact b{font-weight:500}
+.tag{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--bronze);border:1px solid var(--bronze);border-radius:99px;padding:2px 8px;margin-left:6px;vertical-align:middle}
+form{margin-top:22px;display:grid;gap:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 14px;border-radius:99px;font:inherit;font-size:14px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--green);color:var(--green-ink);border-color:var(--green)}
+input,textarea{width:100%;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:12px;font:inherit;font-size:16px}
+textarea{min-height:110px;resize:vertical}
+.small{font-size:13px;color:var(--mute)}
+footer{padding:48px 0 40px;text-align:center;font-size:12px;color:var(--mute);border-top:1px solid var(--line);margin-top:70px}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><span class="brand">Ning</span>
+<div class="navl"><a href="#about" data-i="n_about"></a><a href="#biz" data-i="n_biz"></a><a href="#collab" data-i="n_collab"></a><a href="#contact" data-i="n_contact"></a></div>
+<div class="lang" role="group" aria-label="Language"><button id="bEN" class="on">EN</button><button id="bTH">ไทย</button></div></div></nav>
+
+<header class="wrap hero" id="about">
+<div class="eyebrow" data-i="h_eye"></div>
+<h1>Khanittha<br>Hemngern</h1>
+<div class="id">Founder · Civil Engineer · Business Development</div>
+<p data-i="h_p"></p>
+<div class="rule"></div>
+<div class="facts">
+<div class="fact"><b data-i="f1t"></b> <span class="tag" data-i="conf"></span><br><span class="small" data-i="f1"></span></div>
+<div class="fact"><b data-i="f2t"></b> <span class="tag" data-i="conf"></span><br><span class="small" data-i="f2"></span></div>
+</div>
+<div class="btns"><a class="btn" href="#biz" data-i="cta1"></a><a class="btn ghost" href="#collab" data-i="cta2"></a></div>
+</header>
+
+<div class="bg2" id="biz-wrap"><section id="biz" style="padding-top:60px"><div class="wrap">
+<div class="eyebrow" data-i="b_eye"></div>
+<h2 data-i="b_h"></h2><p class="lead" data-i="b_p"></p>
+<div class="grid" id="cards" role="tablist"></div>
+<div class="panel" id="panel" aria-live="polite"></div>
+</div></section></div>
+
+<section id="collab"><div class="wrap">
+<div class="eyebrow" data-i="c_eye"></div>
+<h2 data-i="c_h"></h2><p class="lead" data-i="c_p"></p>
+<form id="f" onsubmit="return false">
+<div><div class="lbl" data-i="c_int"></div><div class="chips" id="chips"></div></div>
+<div><div class="lbl" data-i="c_name"></div><input id="nm" autocomplete="name"></div>
+<div><div class="lbl" data-i="c_msg"></div><textarea id="msg"></textarea></div>
+<div class="btns" style="margin-top:0"><button class="btn" id="sendMail" type="button" data-i="c_mail"></button><button class="btn ghost" id="sendLine" type="button" data-i="c_line"></button></div>
+<div class="small" id="status" aria-live="polite"></div>
+<div class="note" data-i="c_note"></div>
+</form>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<div class="eyebrow" data-i="k_eye"></div>
+<h2 data-i="k_h"></h2>
+<div class="btns">
+<a class="btn" href="https://line.me/ti/p/H8ScRo0nJT" target="_blank" rel="noopener">LINE</a>
+<a class="btn ghost" href="mailto:k.hemngern@hotmail.com">Email</a>
+<a class="btn ghost" href="https://www.linkedin.com/in/khanittha-hemngern-317530418" target="_blank" rel="noopener">LinkedIn</a>
+</div>
+<p class="small" style="margin-top:18px">LINE ID: nooning_nn · k.hemngern@hotmail.com</p>
+</div></section>
+<footer><div class="wrap" data-i="foot"></div></footer>
+
+<script>
+const UI={
+en:{n_about:"About",n_biz:"Businesses",n_collab:"Collaborate",n_contact:"Contact",h_eye:"Founder Portfolio · Bangkok",
+h_p:"Founder of five businesses and a civil engineer with around ten years in Driven Pile Engineering. Welcome. Explore what each business offers, and reach out directly to start a conversation.",
+conf:"Confirmed",f1t:"Engineering background",f1:"About 10 years in Driven Pile Engineering: drawing and specification review, QTO and BOQ, cost estimation, tender preparation, technical proposals and coordination, foundation engineering and constructability support.",
+f2t:"Primary specialisation",f2:"Driven Pile Engineering (not bored piles).",cta1:"Explore the five businesses",cta2:"Collaborate with Ning",
+b_eye:"The Portfolio",b_h:"Five businesses, one founder",b_p:"Select a business to see what it covers. This is a guided explorer, not a live AI assistant. For anything specific, speak with Ning directly.",
+what:"What it covers",ask:"Questions to explore",bridge:"Continue the conversation",talk:"Message Ning on LINE",
+gen:"Is pricing or availability listed?",gena:"No. Pricing, availability and timelines aren’t published here. Please message Ning directly.",
+c_eye:"Partnerships",c_h:"Let’s build something considered",c_p:"Open to meaningful business relationships and strategic partnerships, including co-agency in property. Tell Ning a little about your idea.",
+c_int:"I’m interested in",c_name:"Your name",c_msg:"Your message",c_mail:"Open in my email app",c_line:"Copy message & open LINE",
+c_note:"Nothing is sent from this page. The buttons prepare your message in your own email app or LINE, and it only reaches Ning when you send it there.",
+copied:"Message copied. Paste it into the LINE chat.",copyfail:"Couldn’t copy automatically. Please select and copy your message, then open LINE.",
+k_eye:"Contact",k_h:"Speak with Ning",foot:"© Khanittha Hemngern (Ning) · Bangkok, Thailand · Information on this page is provided by the founder; no prices, certifications or client references are stated.",
+ph:"Hello Ning, I’d like to talk about…",hi:"Hello Ning,",from:"From: ",topic:"Interested in: ",gen2:"General enquiry"},
+th:{n_about:"เกี่ยวกับ",n_biz:"ธุรกิจ",n_collab:"ร่วมงาน",n_contact:"ติดต่อ",h_eye:"พอร์ตโฟลิโอผู้ก่อตั้ง · กรุงเทพฯ",
+h_p:"ผู้ก่อตั้งธุรกิจห้าแห่ง และวิศวกรโยธาที่มีประสบการณ์ราว 10 ปีด้านงานเสาเข็มตอก ยินดีต้อนรับ เลือกดูบริการของแต่ละธุรกิจ แล้วติดต่อคุณหนิงโดยตรงเพื่อเริ่มพูดคุยได้เลย",
+conf:"ข้อมูลยืนยัน",f1t:"พื้นฐานด้านวิศวกรรม",f1:"ประสบการณ์ราว 10 ปีด้านงานเสาเข็มตอก (Driven Pile): ตรวจแบบและข้อกำหนด, ถอดปริมาณ (QTO) และ BOQ, ประมาณราคา, เตรียมงานประมูล, ข้อเสนอทางเทคนิคและการประสานงาน, งานวิศวกรรมฐานราก และการสนับสนุนด้านความสามารถในการก่อสร้าง",
+f2t:"ความเชี่ยวชาญหลัก",f2:"งานเสาเข็มตอก (Driven Pile) ไม่ใช่เสาเข็มเจาะ",cta1:"ดูธุรกิจทั้งห้า",cta2:"ร่วมงานกับคุณหนิง",
+b_eye:"พอร์ตโฟลิโอ",b_h:"ห้าธุรกิจ หนึ่งผู้ก่อตั้ง",b_p:"เลือกธุรกิจเพื่อดูขอบเขตบริการ หน้านี้เป็นตัวสำรวจข้อมูลแบบแนะนำ ไม่ใช่ผู้ช่วย AI สด หากต้องการรายละเอียดเฉพาะ กรุณาพูดคุยกับคุณหนิงโดยตรง",
+what:"ขอบเขตบริการ",ask:"คำถามที่น่าสำรวจ",bridge:"พูดคุยต่อ",talk:"ส่งข้อความหาคุณหนิงทาง LINE",
+gen:"มีราคาหรือคิวว่างระบุไว้ไหม?",gena:"ไม่มีครับ/ค่ะ ราคา คิวว่าง และระยะเวลา ไม่ได้เผยแพร่ในหน้านี้ กรุณาสอบถามคุณหนิงโดยตรง",
+c_eye:"ความร่วมมือ",c_h:"มาสร้างสิ่งดี ๆ ด้วยกัน",c_p:"เปิดรับความสัมพันธ์ทางธุรกิจที่มีความหมายและพันธมิตรเชิงกลยุทธ์ รวมถึงการร่วมเป็นโค-เอเจนซี่ด้านอสังหาริมทรัพย์ เล่าไอเดียของคุณให้คุณหนิงฟังสั้น ๆ ได้เลย",
+c_int:"สนใจเรื่อง",c_name:"ชื่อของคุณ",c_msg:"ข้อความ",c_mail:"เปิดในแอปอีเมลของฉัน",c_line:"คัดลอกข้อความและเปิด LINE",
+c_note:"หน้านี้ไม่ได้ส่งข้อมูลใด ๆ ปุ่มเหล่านี้เพียงเตรียมข้อความในแอปอีเมลหรือ LINE ของคุณเอง ข้อความจะถึงคุณหนิงเมื่อคุณกดส่งในแอปนั้นเท่านั้น",
+copied:"คัดลอกข้อความแล้ว วางในแชท LINE ได้เลย",copyfail:"คัดลอกอัตโนมัติไม่สำเร็จ กรุณาคัดลอกข้อความเอง แล้วเปิด LINE",
+k_eye:"ติดต่อ",k_h:"พูดคุยกับคุณหนิง",foot:"© คุณขนิษฐา เหมเงิน (หนิง) · กรุงเทพฯ · ข้อมูลในหน้านี้มาจากผู้ก่อตั้ง ไม่มีการระบุราคา ใบรับรอง หรือลูกค้าอ้างอิง",
+ph:"สวัสดีค่ะคุณหนิง ฉันอยากพูดคุยเรื่อง…",hi:"สวัสดีค่ะคุณหนิง",from:"จาก: ",topic:"สนใจเรื่อง: ",gen2:"สอบถามทั่วไป"}};
+
+const B=[
+{n:"OWLTER",en:{name:"OWLTER Engineering & Solutions",tag:"Engineering support",d:"Civil and structural engineering support for projects that need dependable numbers and clear technical review.",o:["Civil and structural engineering support","BOQ and QTO","Cost estimation","Tender assistance","Technical reviews","Constructability assessment","Project coordination"],
+q:[["What does OWLTER cover?","The areas listed above: engineering support, BOQ/QTO, cost estimation, tender assistance, technical reviews, constructability assessment and coordination."],["Does Ning work on bored piles?","Ning’s primary specialisation is Driven Pile Engineering, not Bored Pile Engineering."],["Which projects or clients has it served?","No project or client references are published here. Please ask Ning directly."]]},
+ th:{name:"OWLTER Engineering & Solutions",tag:"สนับสนุนงานวิศวกรรม",d:"สนับสนุนงานวิศวกรรมโยธาและโครงสร้าง สำหรับโครงการที่ต้องการตัวเลขที่เชื่อถือได้และการทบทวนทางเทคนิคที่ชัดเจน",o:["สนับสนุนงานวิศวกรรมโยธาและโครงสร้าง","ถอดปริมาณ (QTO) และ BOQ","ประมาณราคา","ช่วยงานประมูล","ทบทวนทางเทคนิค","ประเมินความสามารถในการก่อสร้าง","ประสานงานโครงการ"],
+q:[["OWLTER ทำอะไรบ้าง?","ตามรายการด้านบน: สนับสนุนงานวิศวกรรม, BOQ/QTO, ประมาณราคา, ช่วยงานประมูล, ทบทวนทางเทคนิค, ประเมินความสามารถในการก่อสร้าง และประสานงาน"],["คุณหนิงทำงานเสาเข็มเจาะไหม?","ความเชี่ยวชาญหลักของคุณหนิงคืองานเสาเข็มตอก (Driven Pile) ไม่ใช่เสาเข็มเจาะ"],["เคยทำโครงการหรือลูกค้าใดบ้าง?","ไม่ได้เผยแพร่รายชื่อโครงการหรือลูกค้าในหน้านี้ กรุณาสอบถามคุณหนิงโดยตรง"]]}},
+{n:"PROPERTY",en:{name:"Property Edit",tag:"Bangkok property",d:"Rentals and property matching in Bangkok, with openness to co-agency.",o:["Property rentals","Property matching","Co-agency opportunities in Bangkok"],
+q:[["What is co-agency?","In general, agents working together on a listing or client. Ning is open to co-agency opportunities in Bangkok. Terms are discussed directly."],["Are listings shown here?","No listings are published on this page. Message Ning to discuss what you’re looking for."]]},
+ th:{name:"Property Edit",tag:"อสังหาริมทรัพย์ในกรุงเทพฯ",d:"บริการเช่าและจับคู่ทรัพย์สินในกรุงเทพฯ พร้อมเปิดรับการร่วมเป็นโค-เอเจนซี่",o:["เช่าทรัพย์สิน","จับคู่ทรัพย์สินที่เหมาะสม","โอกาสร่วมเป็นโค-เอเจนซี่ในกรุงเทพฯ"],
+q:[["โค-เอเจนซี่คืออะไร?","โดยทั่วไปคือนายหน้าตั้งแต่สองฝ่ายขึ้นไปทำงานร่วมกันในทรัพย์หรือลูกค้ารายเดียวกัน คุณหนิงเปิดรับโอกาสในกรุงเทพฯ ส่วนเงื่อนไขคุยกันโดยตรง"],["มีรายการทรัพย์ให้ดูในหน้านี้ไหม?","ไม่มีรายการทรัพย์ในหน้านี้ ส่งข้อความหาคุณหนิงเพื่อบอกสิ่งที่คุณมองหาได้เลย"]]}},
+{n:"PACK",en:{name:"Pack Edit",tag:"Packaging & printing",d:"Packaging and commercial printing solutions, from design through supplier coordination.",o:["Packaging solutions","Commercial printing","Design","Supplier coordination"],
+q:[["What does Pack Edit handle?","Packaging and commercial printing, including design and supplier coordination."],["Are there minimum orders or prices?","None are published here. Please ask Ning directly."]]},
+ th:{name:"Pack Edit",tag:"บรรจุภัณฑ์และงานพิมพ์",d:"โซลูชันบรรจุภัณฑ์และงานพิมพ์เชิงพาณิชย์ ตั้งแต่การออกแบบจนถึงการประสานงานซัพพลายเออร์",o:["โซลูชันบรรจุภัณฑ์","งานพิมพ์เชิงพาณิชย์","ออกแบบ","ประสานงานซัพพลายเออร์"],
+q:[["Pack Edit ดูแลอะไรบ้าง?","บรรจุภัณฑ์และงานพิมพ์เชิงพาณิชย์ รวมถึงการออกแบบและการประสานงานซัพพลายเออร์"],["มีขั้นต่ำการสั่งหรือราคาไหม?","ไม่ได้เผยแพร่ไว้ในหน้านี้ กรุณาสอบถามคุณหนิงโดยตรง"]]}},
+{n:"GATHER",en:{name:"Gather Cute",tag:"Intimate celebrations",d:"Thoughtful hotel surprises, intimate celebrations and small events.",o:["Hotel surprise arrangements","Intimate celebrations","Small-event planning"],
+q:[["What kinds of occasions?","Hotel surprises, intimate celebrations and small events. Share your idea with Ning to see what’s possible."],["Is a date available?","Availability isn’t listed here. Please message Ning with your date."]]},
+ th:{name:"Gather Cute",tag:"งานฉลองแบบอบอุ่น",d:"เซอร์ไพรส์ในโรงแรม งานฉลองส่วนตัว และอีเวนต์ขนาดเล็กที่ใส่ใจรายละเอียด",o:["จัดเซอร์ไพรส์ในโรงแรม","งานฉลองส่วนตัวแบบอบอุ่น","วางแผนอีเวนต์ขนาดเล็ก"],
+q:[["รับจัดโอกาสแบบไหนบ้าง?","เซอร์ไพรส์ในโรงแรม งานฉลองส่วนตัว และอีเวนต์ขนาดเล็ก เล่าไอเดียให้คุณหนิงเพื่อดูว่าทำอะไรได้บ้าง"],["วันที่ต้องการว่างไหม?","ไม่ได้ระบุคิวว่างในหน้านี้ ส่งวันที่ที่ต้องการให้คุณหนิงทางข้อความได้เลย"]]}},
+{n:"FANG KHUN",en:{name:"FANG KHUN (ฟังคุณ)",tag:"Personal listening",d:"A personal listening service: dedicated conversations in a respectful, private setting.",o:["Dedicated listening conversations","Respectful, private setting"],
+q:[["Is this therapy?","No. FANG KHUN is a listening service. It is not psychotherapy or licensed mental-health treatment."],["What if I need clinical support?","Please seek a licensed mental-health professional. If you’re in crisis, contact local emergency services."]],
+ note:"Not psychotherapy or licensed mental-health treatment."},
+ th:{name:"FANG KHUN (ฟังคุณ)",tag:"บริการรับฟังส่วนบุคคล",d:"บริการรับฟังส่วนบุคคล พูดคุยอย่างตั้งใจในบรรยากาศที่เคารพและเป็นส่วนตัว",o:["การพูดคุยแบบตั้งใจรับฟัง","บรรยากาศเคารพและเป็นส่วนตัว"],
+q:[["นี่คือการบำบัดไหม?","ไม่ใช่ ฟังคุณเป็นบริการรับฟัง ไม่ใช่จิตบำบัดหรือการรักษาทางสุขภาพจิตโดยผู้ได้รับใบอนุญาต"],["ถ้าต้องการการดูแลทางคลินิก?","กรุณาพบผู้เชี่ยวชาญด้านสุขภาพจิตที่ได้รับใบอนุญาต หากอยู่ในภาวะวิกฤต โปรดติดต่อหน่วยฉุกเฉินในพื้นที่"]],
+ note:"ไม่ใช่จิตบำบัดหรือการรักษาทางสุขภาพจิตโดยผู้ได้รับใบอนุญาต"}}
+];
+let L="en",cur=0,topics=new Set();
+const $=id=>document.getElementById(id), T=k=>UI[L][k];
+function render(){
+ document.documentElement.lang=L;
+ document.querySelectorAll("[data-i]").forEach(e=>e.textContent=T(e.dataset.i));
+ $("bEN").classList.toggle("on",L=="en");$("bTH").classList.toggle("on",L=="th");
+ $("cards").innerHTML=B.map((b,i)=>`<button class="bc" role="tab" aria-selected="${i==cur}" data-k="${i}"><div class="n">0${i+1}</div><h3>${b[L].name}</h3><span class="t">${b[L].tag}</span></button>`).join("");
+ const b=B[cur],x=b[L],qs=x.q.concat([[T("gen"),T("gena")]]);
+ $("panel").innerHTML=`<div class="eyebrow">0${cur+1} / 05</div><h3>${x.name}</h3><div class="sub">${x.tag}</div><p style="margin:0">${x.d}</p>
+ ${b.en.note?`<div class="note">${x.note}</div>`:""}
+ <div class="lbl">${T("what")}</div><ul>${x.o.map(o=>`<li>${o}</li>`).join("")}</ul>
+ <div class="lbl">${T("ask")}</div><div class="qs">${qs.map((q,i)=>`<div><button class="q" aria-expanded="false" style="width:100%">${q[0]}</button><div class="a">${q[1]}</div></div>`).join("")}</div>
+ <div class="lbl">${T("bridge")}</div><a class="btn" href="https://line.me/ti/p/H8ScRo0nJT" target="_blank" rel="noopener">${T("talk")}</a>`;
+ $("chips").innerHTML=B.map((b,i)=>`<button type="button" class="chip" aria-pressed="${topics.has(i)}" data-t="${i}">${b[L].name.split(" (")[0]}</button>`).join("")+`<button type="button" class="chip" aria-pressed="${topics.has(9)}" data-t="9">${L=="en"?"Partnership":"พันธมิตร"}</button>`;
+ $("msg").placeholder=T("ph");
+}
+document.addEventListener("click",e=>{
+ const c=e.target.closest("[data-k]");if(c){cur=+c.dataset.k;render();$("panel").scrollIntoView({behavior:"smooth",block:"nearest"});return}
+ const q=e.target.closest(".q");if(q){q.setAttribute("aria-expanded",q.getAttribute("aria-expanded")!="true");return}
+ const t=e.target.closest("[data-t]");if(t){const k=+t.dataset.t;topics.has(k)?topics.delete(k):topics.add(k);render()}
+});
+$("bEN").onclick=()=>{L="en";render()};$("bTH").onclick=()=>{L="th";render()};
+function draft(){
+ const names=[...topics].map(k=>k==9?(L=="en"?"Partnership":"พันธมิตร"):B[k][L].name).join(", ")||T("gen2");
+ return [T("hi"),$("nm").value?T("from")+$("nm").value:"",T("topic")+names,"",$("msg").value].filter((s,i)=>s||i==3).join("\n");
+}
+$("sendMail").onclick=()=>{location.href="mailto:k.hemngern@hotmail.com?subject="+encodeURIComponent("Enquiry via Meet Ning")+"&body="+encodeURIComponent(draft())};
+$("sendLine").onclick=async()=>{
+ try{await navigator.clipboard.writeText(draft());$("status").textContent=T("copied")}catch(_){$("status").textContent=T("copyfail")}
+ window.open("https://line.me/ti/p/H8ScRo0nJT","_blank","noopener");
+};
+render();
+</script>
+</body>
+</html>
